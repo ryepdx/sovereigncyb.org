@@ -1,0 +1,25 @@
+nav {
+  ul {
+    list-style: none;
+    margin-bottom: 1em;
+    }
+
+    ul li {
+      display: inline;
+    }
+
+    a, a:visited, a:active {
+      text-decoration: none;
+      padding: 0.5em;
+      color: #000;
+    }
+ 
+    a:hover {
+      background-color: #EEE;
+    }
+
+   a.active {
+      background-color: #000;
+      color: #FFF;
+   }
+ }

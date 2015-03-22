@@ -1,0 +1,10 @@
+<template name="scyborgPostTitle">
+  <h3><a href="{{postLink}}" target="{{postTarget}}">{{title}}</a></h3>
+  {{#if url}}<span class="post-domain">{{domain}}</span>{{/if}}
+  <span class="post-meta-item" aria-live="off">
+    {{#if postedAt}}<span class="post-time">{{timeAgo postedAt}}</span>{{/if}}
+    {{#if canEdit this}}
+    {{/if}}
+  </span>
+  <a href="{{pathFor route='post_edit' _id=_id}}" class="edit-link goto-edit">{{_ "edit"}}</a>
+</template>

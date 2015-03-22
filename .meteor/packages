@@ -65,13 +65,11 @@ telescope-i18n
 # Telescope Packages (Optional)
 
 telescope-datetimepicker
-telescope-theme-base
 telescope-module-share
 telescope-api
 telescope-rss
 telescope-search
 telescope-tags
-telescope-theme-hubble
 telescope-email
 telescope-embedly
 telescope-newsletter
@@ -88,3 +86,4 @@ telescope-subscribe-to-posts
 telescope-tagline-banner
 
 # Custom Packages
+scyborg-theme

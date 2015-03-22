@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import 'grid';
+@import 'colors';
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding-top: 0.2em;
+
+    h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+a, a:active, a:visited {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.outer-wrapper {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-centric {
+    margin-top: 1.5em;
+    margin-bottom: 20px;
+    
+    h1 {
+        margin-top: 1em;
+    }
+
+    li, h1, p {
+        line-height: 1.75em;
+    }
+
+    ul, li {
+        list-style-type: disc;
+        margin-left: 1em;
+    }
+    ul {
+        margin: 1em;
+    }
+}
+
+#rss_icon {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.footer {
+    text-align: center;
+    color: $light-text;
+    font-size: 12px;
+
+    a {
+        color: $light-text;
+    }
+}
+
+@import 'posts';
+@import 'nav';

@@ -1,0 +1,7 @@
+<template name="scyborgPostCategories">
+  <span class="post-categories">
+    {{#each categoriesArray}}
+      <a href="{{categoryLink}}" class="post-category category-{{slug}}">{{name}}</a>
+    {{/each}}
+  </span>
+</template>
