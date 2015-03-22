@@ -30,3 +30,6 @@ scratch
 .meteor/local
 .meteor/meteorite
 mup.json
+
+### Vim
+*.swp
