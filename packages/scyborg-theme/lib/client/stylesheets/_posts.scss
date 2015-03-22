@@ -464,6 +464,9 @@
 					display: block;
 					margin-bottom: 4px;
 					font-size: 13px;
+					white-space: nowrap;
+					overflow: hidden;
+					overflow-text: ellipsis;
 				}
 			}
 			.post-meta {
