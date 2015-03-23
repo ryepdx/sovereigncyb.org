@@ -1,5 +1,19 @@
 <template name="scyborgPostContent">
-      {{#each postHeading}}
-        {{> UI.dynamic template=getTemplate data=..}}
+  <span class="title-wrapper">
+    <h3><a href="{{postLink}}" target="{{postTarget}}">{{title}}</a></h3>
+    <span class="post-categories">
+      {{#each categoriesArray}}
+        <a href="{{categoryLink}}" class="post-category category-{{slug}}">{{name}}</a>
       {{/each}}
+    </span>
+  </span>
+  <span>
+    <span class="post-meta-item" aria-live="off">
+      {{#if postedAt}}<span class="post-time">{{timeAgo postedAt}}</span>{{/if}}
+    </span>
+    {{#if url}}<span class="post-domain">{{domain}}</span>{{/if}}
+    {{#if canEdit this}}
+      <a href="{{pathFor route='post_edit' _id=_id}}" class="edit-link goto-edit">{{_ "edit"}}</a>
+    {{/if}}
+  </span>
 </template>

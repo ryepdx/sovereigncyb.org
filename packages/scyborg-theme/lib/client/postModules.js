@@ -1,10 +1,6 @@
 postModules = [
   {
-    template: 'postTitle',
+    template: 'postContent',
     order: 20
-  },
-  {
-    template: 'postCategories',
-    order: 40
   }
 ]
